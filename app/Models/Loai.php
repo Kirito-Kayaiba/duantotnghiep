@@ -7,5 +7,10 @@ use Illuminate\Database\Eloquent\Model;
 
 class Loai extends Model
 {
-    use HasFactory;
+    protected $primaryKey = 'id_loai';
+    protected $table = "Loai";
+    public function sanpham()
+    {
+        return $this->hasMany('App\Models\SanPham', 'id_loai','id_loai');
+    }
 }

@@ -1,6 +1,9 @@
 <?php
 
+
 use Illuminate\Support\Facades\Route;
+use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
 
 /*
 |--------------------------------------------------------------------------
@@ -16,3 +19,21 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
+
+use App\Models\Loai;
+
+Route::get('/thu', function () {
+    $loai = Loai::find(1);
+
+    if ($loai) {
+        foreach ($loai->sanpham as $sp) {
+            echo $sp->ten_san_pham . "<br>";
+        }
+    } else {
+        echo "Không tìm thấy loại có id_loai = 1";
+    }
+});
+
+
+

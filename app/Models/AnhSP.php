@@ -8,4 +8,5 @@ use Illuminate\Database\Eloquent\Model;
 class AnhSP extends Model
 {
     use HasFactory;
+    protected $table = "AnhSP";
 }
