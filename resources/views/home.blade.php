@@ -1,86 +1,105 @@
 @extends('layout')
 @section('noidung')
 <style>
-   .mainmenu-area {
+.mainmenu-area {
     background: none repeat scroll 0 0 #333;
-    font-family: "Roboto Condensed",sans-serif;
+    font-family: "Roboto Condensed", sans-serif;
     text-transform: uppercase;
     width: 100%;
     z-index: 999;
 }
+
 .mainmenu-area ul.navbar-nav li a {
     color: white;
     font-size: 14px;
     padding: 20px;
 }
-.logo h1 a img{
+
+.logo h1 a img {
     width: 30%;
 }
-.header-area{
+
+.header-area {
     background-color: white;
 }
-.header-area{
+
+.header-area {
     background-color: #f17024;
 }
+
 .header-area a {
     color: white;
 }
-body{
+
+body {
     background-color: #f17024;
 }
-.maincontent-area .container{
+
+.maincontent-area .container {
     background-color: white;
- padding: 30px;
+    padding: 30px;
 }
-.site-branding-area{
+
+.site-branding-area {
     background-color: white;
 }
 
 
-.product-widget-area .container{
+.product-widget-area .container {
     background-color: white;
 }
-.promo-area .container{
+
+.promo-area .container {
     background-color: white;
 
 }
+
 .promo-area {
     background-color: #f17024;
     padding: 40px 0 40px;
 }
+
 .single-promo {
-    padding:20px 0px;
+    padding: 20px 0px;
     font-size: 25px;
     font-weight: 200;
     padding: 20px 10px;
     text-align: center;
 }
-.col-md-3{
+
+.col-md-3 {
     padding: 40px 20px;
 
 }
-.section-title{
+
+.section-title {
     font-weight: bold;
     color: #f17024;
     font-size: 30px;
-    text-align:left ;
+    text-align: left;
     padding: 20px;
 }
+
 .product-carousel {
-     padding-top: 0px; }
-.col-md-12{
-    background-color:white ;
+    padding-top: 0px;
 }
+
+.col-md-12 {
+    background-color: white;
+}
+
 .brands-area {
     color: #fff;
     padding: 20px 0 20px;
 }
+
 .brands-area {
     border-top: 0px solid #e5e5e5;
     border-bottom: 0px solid #e5e5e5;
     color: #fff;
     padding: 20px 0 20px;
 }
+
 .maincontent-area {
     padding-bottom: 10px;
     padding-top: 20px;
@@ -88,40 +107,50 @@ body{
 
 .product-widget-area {
     padding-bottom: 0px;
-     padding-top: 0px; 
+    padding-top: 0px;
 }
 
 
-#container{
+#container {
     padding-left: 0px;
     padding-right: 0px;
     margin: 0 auto;
 }
+
 .panner {
-    width: 100%; /* Đảm bảo ảnh chiếm full chiều ngang của thẻ div */
-    height: 100%; /* Đảm bảo ảnh chiếm full chiều cao của thẻ div */
-    object-fit: cover; /* Hiển thị ảnh mà không bị méo */
-    object-position: center; /* Hiển thị ảnh ở giữa thẻ div */
+    width: 100%;
+    /* Đảm bảo ảnh chiếm full chiều ngang của thẻ div */
+    height: 100%;
+    /* Đảm bảo ảnh chiếm full chiều cao của thẻ div */
+    object-fit: cover;
+    /* Hiển thị ảnh mà không bị méo */
+    object-position: center;
+    /* Hiển thị ảnh ở giữa thẻ div */
     height: 250px;
 
 }
-.panner1{
+
+.panner1 {
     width: 100%;
     margin-bottom: 30px;
-    
+
 }
-.container .row{
+
+.container .row {
     padding: 0;
 }
-.con{
+
+.con {
     padding: 0px;
 }
-.panner4{
+
+.panner4 {
     margin-top: -30px;
     width: 60%;
     margin: 0 auto;
 
 }
+
 .maincontent-area .container {
     background-color: white;
 
@@ -129,31 +158,41 @@ body{
 
 
 .flash-sale-title {
-    display: flex; /* Sử dụng flexbox để căn giữa */
-    justify-content: center; /* Căn giữa theo chiều ngang (trục X) */
-    align-items: center; /* Căn giữa theo chiều dọc (trục Y) */
-    width: 100%; /* Đảm bảo thẻ div chiếm full chiều ngang */
+    display: flex;
+    /* Sử dụng flexbox để căn giữa */
+    justify-content: center;
+    /* Căn giữa theo chiều ngang (trục X) */
+    align-items: center;
+    /* Căn giữa theo chiều dọc (trục Y) */
+    width: 100%;
+    /* Đảm bảo thẻ div chiếm full chiều ngang */
 }
 
 .panner4 {
-    max-width: 100%; /* Đảm bảo ảnh không vượt quá kích thước của thẻ div */
-    max-height: 100%; /* Đảm bảo ảnh không vượt quá kích thước của thẻ div */
+    max-width: 100%;
+    /* Đảm bảo ảnh không vượt quá kích thước của thẻ div */
+    max-height: 100%;
+    /* Đảm bảo ảnh không vượt quá kích thước của thẻ div */
 }
+
 .promo-area {
     background-color: #f17024;
     padding: 0 40px;
 }
+
 .brands-area {
     border-top: 0px solid #e5e5e5;
     border-bottom: 0px solid #e5e5e5;
     color: #fff;
     padding: 10px 0 20px;
 }
+
 .maincontent-area {
     padding-bottom: 10px;
     padding-top: 0px;
 }
-#container{
+
+#container {
     margin-top: 10px;
     margin-bottom: 20px;
 }
@@ -165,6 +204,7 @@ body{
     align-items: stretch;
     margin: 0 0 30px;
 }
+
 .tech-new {
     float: left;
     width: 895px;
@@ -173,14 +213,17 @@ body{
     margin-right: 20px;
     border-radius: 12px;
 }
+
 .bg-ctv {
     display: block;
     overflow: hidden;
     max-width: 285px;
 }
+
 .tech-new ul li:last-child {
     margin-right: 0;
 }
+
 .tech-new ul li span {
     display: block;
     overflow: hidden;
@@ -193,6 +236,7 @@ body{
     color: #333;
     margin: 10px 0;
 }
+
 .name-box {
     display: block;
     overflow: hidden;
@@ -202,6 +246,7 @@ body{
     color: #f17024;
     text-transform: uppercase;
 }
+
 .tech-new ul li {
     float: left;
     overflow: hidden;
@@ -209,12 +254,14 @@ body{
     width: 33%;
     margin-right: 10px;
 }
+
 .tech-new ul li img {
     display: block;
     width: 100%;
     border-radius: 8px;
     height: auto;
 }
+
 .tech-new ul {
     display: flex;
     overflow: hidden;
@@ -222,11 +269,13 @@ body{
     align-items: center;
     padding: 15px 18px;
 }
-#container1{
+
+#container1 {
     padding-left: 0px;
     padding-right: 0px;
     margin-top: 20px;
 }
+
 .name-box a {
     float: right;
     text-transform: none;
@@ -236,94 +285,107 @@ body{
     text-transform: uppercase;
 }
 
-#container2{
+#container2 {
     padding: 30px;
 }
-.container{
+
+.container {
     border-radius: 10px;
 }
-#container3{
+
+#container3 {
     margin-top: 20px;
 }
 
-.footer-about-us p{
+.footer-about-us p {
     color: black;
 }
-.footer-wid-title{
+
+.footer-wid-title {
     color: #f17024;
 }
+
 .footer-menu a {
     display: block;
     padding: 5px 0;
     color: #333;
 }
+
 .footer-top-area {
     background: white;
     padding: 35px 0 180px;
 }
-.footer-about-us h1 a img{
+
+.footer-about-us h1 a img {
     width: 70%;
 }
+
 .footer-top-area {
     background: white;
     padding: 5px 0 0px;
 }
+
 .fs-search {
-                float: left;
-                margin-top: 10px
-            }
+    float: left;
+    margin-top: 10px
+}
 
-            .fs-search>form .search-button i {
-                color: #fff;
-                font-size: 20px
-            }
+.fs-search>form .search-button i {
+    color: #fff;
+    font-size: 20px
+}
 
-            .fs-search>form {
-                display: block;
-                width: 496px;
-                position: relative;
-                z-index: 11
-            }
+.fs-search>form {
+    display: block;
+    width: 496px;
+    position: relative;
+    z-index: 11
+}
 
-            .fs-search>form>input {
-                width: 100%;
-                height: 38px;
-                border: none;
-                font-size: 14px;
-                padding: 0 60px 0 10px;
-                background: #fff;
-                border-radius: 2px
-            }
+.fs-search>form>input {
+    width: 100%;
+    height: 38px;
+    border: none;
+    font-size: 14px;
+    padding: 0 60px 0 10px;
+    background: #fff;
+    border-radius: 2px
+}
 
-            .fs-search>form>button {
-                width: 58px;
-                height: 38px;
-                display: inline-block;
-                position: absolute;
-                top: 0;
-                right: 0;
-                border: none;
-                background: #333;
-                border-radius: 0 2px 2px 0
-            }
-#sm form{
+.fs-search>form>button {
+    width: 58px;
+    height: 38px;
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    border: none;
+    background: #333;
+    border-radius: 0 2px 2px 0
+}
+
+#sm form {
     margin-top: 40px;
     width: 100%;
 }
-#sm{
+
+#sm {
     width: 50%;
 }
-#sm form input{
+
+#sm form input {
     width: 80%;
-} 
-#right{
-    color:white;
 }
 
-#brands-areass{
+#right {
+    color: white;
+}
+
+#brands-areass {
     border-radius: 10px;
 }
-.navbar-nav li:hover{
+
+.navbar-nav li:hover {
     background-color: #555;
 }
 
@@ -332,10 +394,10 @@ body{
     height: auto;
     padding: 15px;
 }
+
 body {
     background-image: url(https://images.fpt.shop/unsafe/fit-in/filters:quality(95):fill(transparent)s/fptshop.com.vn/Uploads/Originals/2023/9/6/638295864115669422_bg_theme-031.png);
 }
-
 </style>
 
 
@@ -437,9 +499,10 @@ body {
                     <img class="panner1" src="img/panner1.png" alt="">
 
                     <div class="product-carousel">
+                        @foreach($sp as $s)
                         <div class="single-product">
                             <div class="product-f-image">
-                                <img src="img/product-1.jpg" alt="">
+                                <img src="img/{{$s->hinh}}" alt="">
                                 <div class="product-hover">
                                     <a href="#" class="add-to-cart-link"><i class="fa fa-shopping-cart"></i> Add to
                                         cart</a>
@@ -448,96 +511,15 @@ body {
                                 </div>
                             </div>
 
-                            <h2><a href="/chitiet">Samsung Galaxy s5- 2015</a></h2>
+                            <h2><a href="/chitiet">{{$s->ten_san_pham}}</a></h2>
 
                             <div class="product-carousel-price">
-                                <ins>$700.00</ins> <del>$100.00</del>
+                                <ins>{{$s->gia}}</ins> <del>{{$s->gia_khuyen_mai}}</del>
                             </div>
                         </div>
-                        <div class="single-product">
-                            <div class="product-f-image">
-                                <img src="img/product-2.jpg" alt="">
-                                <div class="product-hover">
-                                    <a href="#" class="add-to-cart-link"><i class="fa fa-shopping-cart"></i> Add to
-                                        cart</a>
-                                    <a href="/chitiet" class="view-details-link"><i class="fa fa-link"></i>
-                                        See details</a>
-                                </div>
-                            </div>
+                        @endforeach
+                        <!--  -->
 
-                            <h2>Nokia Lumia 1320</h2>
-                            <div class="product-carousel-price">
-                                <ins>$899.00</ins> <del>$999.00</del>
-                            </div>
-                        </div>
-                        <div class="single-product">
-                            <div class="product-f-image">
-                                <img src="img/product-3.jpg" alt="">
-                                <div class="product-hover">
-                                    <a href="#" class="add-to-cart-link"><i class="fa fa-shopping-cart"></i> Add to
-                                        cart</a>
-                                    <a href="/chitiet" class="view-details-link"><i class="fa fa-link"></i>
-                                        See details</a>
-                                </div>
-                            </div>
-
-                            <h2>LG Leon 2015</h2>
-
-                            <div class="product-carousel-price">
-                                <ins>$400.00</ins> <del>$425.00</del>
-                            </div>
-                        </div>
-                        <div class="single-product">
-                            <div class="product-f-image">
-                                <img src="img/product-4.jpg" alt="">
-                                <div class="product-hover">
-                                    <a href="#" class="add-to-cart-link"><i class="fa fa-shopping-cart"></i> Add to
-                                        cart</a>
-                                    <a href="/chitiet" class="view-details-link"><i class="fa fa-link"></i>
-                                        See details</a>
-                                </div>
-                            </div>
-
-                            <h2><a href="/chitiet">Sony microsoft</a></h2>
-
-                            <div class="product-carousel-price">
-                                <ins>$200.00</ins> <del>$225.00</del>
-                            </div>
-                        </div>
-                        <div class="single-product">
-                            <div class="product-f-image">
-                                <img src="img/product-5.jpg" alt="">
-                                <div class="product-hover">
-                                    <a href="#" class="add-to-cart-link"><i class="fa fa-shopping-cart"></i> Add to
-                                        cart</a>
-                                    <a href="/chitiet" class="view-details-link"><i class="fa fa-link"></i>
-                                        See details</a>
-                                </div>
-                            </div>
-
-                            <h2>iPhone 6</h2>
-
-                            <div class="product-carousel-price">
-                                <ins>$1200.00</ins> <del>$1355.00</del>
-                            </div>
-                        </div>
-                        <div class="single-product">
-                            <div class="product-f-image">
-                                <img src="img/product-6.jpg" alt="">
-                                <div class="product-hover">
-                                    <a href="#" class="add-to-cart-link"><i class="fa fa-shopping-cart"></i> Add to
-                                        cart</a>
-                                    <a href="/chitiet" class="view-details-link"><i class="fa fa-link"></i>
-                                        See details</a>
-                                </div>
-                            </div>
-
-                            <h2><a href="/chitiet">Samsung gallaxy note 4</a></h2>
-
-                            <div class="product-carousel-price">
-                                <ins>$400.00</ins>
-                            </div>
-                        </div>
                     </div>
                 </div>
             </div>
@@ -574,9 +556,10 @@ body {
                 <div class="latest-product">
                     <h2 class="section-title">Latest Products</h2>
                     <div class="product-carousel">
+                        @foreach($sp2 as $s)
                         <div class="single-product">
                             <div class="product-f-image">
-                                <img src="img/product-1.jpg" alt="">
+                                <img src="img/{{$s->hinh}}" alt="">
                                 <div class="product-hover">
                                     <a href="#" class="add-to-cart-link"><i class="fa fa-shopping-cart"></i> Add to
                                         cart</a>
@@ -585,101 +568,20 @@ body {
                                 </div>
                             </div>
 
-                            <h2><a href="/chitiet">Samsung Galaxy s5- 2015</a></h2>
+                            <h2><a href="/chitiet">{{$s->ten_san_pham}}</a></h2>
 
                             <div class="product-carousel-price">
-                                <ins>$700.00</ins> <del>$100.00</del>
+                                <ins>{{$s->gia}}</ins> <del>{{$s->gia_khuyen_mai}}</del>
                             </div>
                         </div>
-                        <div class="single-product">
-                            <div class="product-f-image">
-                                <img src="img/product-2.jpg" alt="">
-                                <div class="product-hover">
-                                    <a href="#" class="add-to-cart-link"><i class="fa fa-shopping-cart"></i> Add to
-                                        cart</a>
-                                    <a href="/chitiet" class="view-details-link"><i class="fa fa-link"></i>
-                                        See details</a>
-                                </div>
-                            </div>
+                        @endforeach
 
-                            <h2>Nokia Lumia 1320</h2>
-                            <div class="product-carousel-price">
-                                <ins>$899.00</ins> <del>$999.00</del>
-                            </div>
-                        </div>
-                        <div class="single-product">
-                            <div class="product-f-image">
-                                <img src="img/product-3.jpg" alt="">
-                                <div class="product-hover">
-                                    <a href="#" class="add-to-cart-link"><i class="fa fa-shopping-cart"></i> Add to
-                                        cart</a>
-                                    <a href="/chitiet" class="view-details-link"><i class="fa fa-link"></i>
-                                        See details</a>
-                                </div>
-                            </div>
-
-                            <h2>LG Leon 2015</h2>
-
-                            <div class="product-carousel-price">
-                                <ins>$400.00</ins> <del>$425.00</del>
-                            </div>
-                        </div>
-                        <div class="single-product">
-                            <div class="product-f-image">
-                                <img src="img/product-4.jpg" alt="">
-                                <div class="product-hover">
-                                    <a href="#" class="add-to-cart-link"><i class="fa fa-shopping-cart"></i> Add to
-                                        cart</a>
-                                    <a href="/chitiet" class="view-details-link"><i class="fa fa-link"></i>
-                                        See details</a>
-                                </div>
-                            </div>
-
-                            <h2><a href="/chitiet">Sony microsoft</a></h2>
-
-                            <div class="product-carousel-price">
-                                <ins>$200.00</ins> <del>$225.00</del>
-                            </div>
-                        </div>
-                        <div class="single-product">
-                            <div class="product-f-image">
-                                <img src="img/product-5.jpg" alt="">
-                                <div class="product-hover">
-                                    <a href="#" class="add-to-cart-link"><i class="fa fa-shopping-cart"></i> Add to
-                                        cart</a>
-                                    <a href="/chitiet" class="view-details-link"><i class="fa fa-link"></i>
-                                        See details</a>
-                                </div>
-                            </div>
-
-                            <h2>iPhone 6</h2>
-
-                            <div class="product-carousel-price">
-                                <ins>$1200.00</ins> <del>$1355.00</del>
-                            </div>
-                        </div>
-                        <div class="single-product">
-                            <div class="product-f-image">
-                                <img src="img/product-6.jpg" alt="">
-                                <div class="product-hover">
-                                    <a href="#" class="add-to-cart-link"><i class="fa fa-shopping-cart"></i> Add to
-                                        cart</a>
-                                    <a href="/chitiet" class="view-details-link"><i class="fa fa-link"></i>
-                                        See details</a>
-                                </div>
-                            </div>
-
-                            <h2><a href="/chitiet">Samsung gallaxy note 4</a></h2>
-
-                            <div class="product-carousel-price">
-                                <ins>$400.00</ins>
-                            </div>
-                        </div>
                     </div>
                     <div class="product-carousel">
+                        @foreach($sp3 as $s)
                         <div class="single-product">
                             <div class="product-f-image">
-                                <img src="img/product-1.jpg" alt="">
+                                <img src="img/{{$s->hinh}}" alt="">
                                 <div class="product-hover">
                                     <a href="#" class="add-to-cart-link"><i class="fa fa-shopping-cart"></i> Add to
                                         cart</a>
@@ -688,96 +590,13 @@ body {
                                 </div>
                             </div>
 
-                            <h2><a href="/chitiet">Samsung Galaxy s5- 2015</a></h2>
+                            <h2><a href="/chitiet">{{$s->ten_san_pham}}</a></h2>
 
                             <div class="product-carousel-price">
-                                <ins>$700.00</ins> <del>$100.00</del>
+                                <ins>{{$s->gia}}</ins> <del>{{$s->gia_khuyen_mai}}</del>
                             </div>
                         </div>
-                        <div class="single-product">
-                            <div class="product-f-image">
-                                <img src="img/product-2.jpg" alt="">
-                                <div class="product-hover">
-                                    <a href="#" class="add-to-cart-link"><i class="fa fa-shopping-cart"></i> Add to
-                                        cart</a>
-                                    <a href="/chitiet" class="view-details-link"><i class="fa fa-link"></i>
-                                        See details</a>
-                                </div>
-                            </div>
-
-                            <h2>Nokia Lumia 1320</h2>
-                            <div class="product-carousel-price">
-                                <ins>$899.00</ins> <del>$999.00</del>
-                            </div>
-                        </div>
-                        <div class="single-product">
-                            <div class="product-f-image">
-                                <img src="img/product-3.jpg" alt="">
-                                <div class="product-hover">
-                                    <a href="#" class="add-to-cart-link"><i class="fa fa-shopping-cart"></i> Add to
-                                        cart</a>
-                                    <a href="/chitiet" class="view-details-link"><i class="fa fa-link"></i>
-                                        See details</a>
-                                </div>
-                            </div>
-
-                            <h2>LG Leon 2015</h2>
-
-                            <div class="product-carousel-price">
-                                <ins>$400.00</ins> <del>$425.00</del>
-                            </div>
-                        </div>
-                        <div class="single-product">
-                            <div class="product-f-image">
-                                <img src="img/product-4.jpg" alt="">
-                                <div class="product-hover">
-                                    <a href="#" class="add-to-cart-link"><i class="fa fa-shopping-cart"></i> Add to
-                                        cart</a>
-                                    <a href="/chitiet" class="view-details-link"><i class="fa fa-link"></i>
-                                        See details</a>
-                                </div>
-                            </div>
-
-                            <h2><a href="/chitiet">Sony microsoft</a></h2>
-
-                            <div class="product-carousel-price">
-                                <ins>$200.00</ins> <del>$225.00</del>
-                            </div>
-                        </div>
-                        <div class="single-product">
-                            <div class="product-f-image">
-                                <img src="img/product-5.jpg" alt="">
-                                <div class="product-hover">
-                                    <a href="#" class="add-to-cart-link"><i class="fa fa-shopping-cart"></i> Add to
-                                        cart</a>
-                                    <a href="/chitiet" class="view-details-link"><i class="fa fa-link"></i>
-                                        See details</a>
-                                </div>
-                            </div>
-
-                            <h2>iPhone 6</h2>
-
-                            <div class="product-carousel-price">
-                                <ins>$1200.00</ins> <del>$1355.00</del>
-                            </div>
-                        </div>
-                        <div class="single-product">
-                            <div class="product-f-image">
-                                <img src="img/product-6.jpg" alt="">
-                                <div class="product-hover">
-                                    <a href="#" class="add-to-cart-link"><i class="fa fa-shopping-cart"></i> Add to
-                                        cart</a>
-                                    <a href="/chitiet" class="view-details-link"><i class="fa fa-link"></i>
-                                        See details</a>
-                                </div>
-                            </div>
-
-                            <h2><a href="/chitiet">Samsung gallaxy note 4</a></h2>
-
-                            <div class="product-carousel-price">
-                                <ins>$400.00</ins>
-                            </div>
-                        </div>
+                        @endforeach
                     </div>
                 </div>
             </div>
@@ -798,9 +617,10 @@ body {
                 <div class="latest-product">
                     <h2 class="section-title">Latest Products</h2>
                     <div class="product-carousel">
+                        @foreach($sp as $s)
                         <div class="single-product">
                             <div class="product-f-image">
-                                <img src="img/product-1.jpg" alt="">
+                                <img src="img/{{$s->hinh}}" alt="">
                                 <div class="product-hover">
                                     <a href="#" class="add-to-cart-link"><i class="fa fa-shopping-cart"></i> Add to
                                         cart</a>
@@ -809,101 +629,19 @@ body {
                                 </div>
                             </div>
 
-                            <h2><a href="/chitiet">Samsung Galaxy s5- 2015</a></h2>
+                            <h2><a href="/chitiet">{{$s->ten_san_pham}}</a></h2>
 
                             <div class="product-carousel-price">
-                                <ins>$700.00</ins> <del>$100.00</del>
+                                <ins>{{$s->gia}}</ins> <del>{{$s->gia_khuyen_mai}}</del>
                             </div>
                         </div>
-                        <div class="single-product">
-                            <div class="product-f-image">
-                                <img src="img/product-2.jpg" alt="">
-                                <div class="product-hover">
-                                    <a href="#" class="add-to-cart-link"><i class="fa fa-shopping-cart"></i> Add to
-                                        cart</a>
-                                    <a href="/chitiet" class="view-details-link"><i class="fa fa-link"></i>
-                                        See details</a>
-                                </div>
-                            </div>
-
-                            <h2>Nokia Lumia 1320</h2>
-                            <div class="product-carousel-price">
-                                <ins>$899.00</ins> <del>$999.00</del>
-                            </div>
-                        </div>
-                        <div class="single-product">
-                            <div class="product-f-image">
-                                <img src="img/product-3.jpg" alt="">
-                                <div class="product-hover">
-                                    <a href="#" class="add-to-cart-link"><i class="fa fa-shopping-cart"></i> Add to
-                                        cart</a>
-                                    <a href="/chitiet" class="view-details-link"><i class="fa fa-link"></i>
-                                        See details</a>
-                                </div>
-                            </div>
-
-                            <h2>LG Leon 2015</h2>
-
-                            <div class="product-carousel-price">
-                                <ins>$400.00</ins> <del>$425.00</del>
-                            </div>
-                        </div>
-                        <div class="single-product">
-                            <div class="product-f-image">
-                                <img src="img/product-4.jpg" alt="">
-                                <div class="product-hover">
-                                    <a href="#" class="add-to-cart-link"><i class="fa fa-shopping-cart"></i> Add to
-                                        cart</a>
-                                    <a href="/chitiet" class="view-details-link"><i class="fa fa-link"></i>
-                                        See details</a>
-                                </div>
-                            </div>
-
-                            <h2><a href="/chitiet">Sony microsoft</a></h2>
-
-                            <div class="product-carousel-price">
-                                <ins>$200.00</ins> <del>$225.00</del>
-                            </div>
-                        </div>
-                        <div class="single-product">
-                            <div class="product-f-image">
-                                <img src="img/product-5.jpg" alt="">
-                                <div class="product-hover">
-                                    <a href="#" class="add-to-cart-link"><i class="fa fa-shopping-cart"></i> Add to
-                                        cart</a>
-                                    <a href="/chitiet" class="view-details-link"><i class="fa fa-link"></i>
-                                        See details</a>
-                                </div>
-                            </div>
-
-                            <h2>iPhone 6</h2>
-
-                            <div class="product-carousel-price">
-                                <ins>$1200.00</ins> <del>$1355.00</del>
-                            </div>
-                        </div>
-                        <div class="single-product">
-                            <div class="product-f-image">
-                                <img src="img/product-6.jpg" alt="">
-                                <div class="product-hover">
-                                    <a href="#" class="add-to-cart-link"><i class="fa fa-shopping-cart"></i> Add to
-                                        cart</a>
-                                    <a href="/chitiet" class="view-details-link"><i class="fa fa-link"></i>
-                                        See details</a>
-                                </div>
-                            </div>
-
-                            <h2><a href="/chitiet">Samsung gallaxy note 4</a></h2>
-
-                            <div class="product-carousel-price">
-                                <ins>$400.00</ins>
-                            </div>
-                        </div>
+                        @endforeach
                     </div>
                     <div class="product-carousel">
+                        @foreach($sp4 as $s)
                         <div class="single-product">
                             <div class="product-f-image">
-                                <img src="img/product-1.jpg" alt="">
+                                <img src="img/{{$s->hinh}}" alt="">
                                 <div class="product-hover">
                                     <a href="#" class="add-to-cart-link"><i class="fa fa-shopping-cart"></i> Add to
                                         cart</a>
@@ -912,95 +650,13 @@ body {
                                 </div>
                             </div>
 
-                            <h2><a href="/chitiet">Samsung Galaxy s5- 2015</a></h2>
+                            <h2><a href="/chitiet">{{$s->ten_san_pham}}</a></h2>
 
                             <div class="product-carousel-price">
-                                <ins>$700.00</ins> <del>$100.00</del>
+                                <ins>{{$s->gia}}</ins> <del>{{$s->gia_khuyen_mai}}</del>
                             </div>
                         </div>
-                        <div class="single-product">
-                            <div class="product-f-image">
-                                <img src="img/product-2.jpg" alt="">
-                                <div class="product-hover">
-                                    <a href="#" class="add-to-cart-link"><i class="fa fa-shopping-cart"></i> Add to
-                                        cart</a>
-                                    <a href="/chitiet" class="view-details-link"><i class="fa fa-link"></i>
-                                        See details</a>
-                                </div>
-                            </div>
-
-                            <h2>Nokia Lumia 1320</h2>
-                            <div class="product-carousel-price">
-                                <ins>$899.00</ins> <del>$999.00</del>
-                            </div>
-                        </div>
-                        <div class="single-product">
-                            <div class="product-f-image">
-                                <img src="img/product-3.jpg" alt="">
-                                <div class="product-hover">
-                                    <a href="#" class="add-to-cart-link"><i class="fa fa-shopping-cart"></i> Add to
-                                        cart</a>
-                                    <a href="/chitiet" class="view-details-link"><i class="fa fa-link"></i>
-                                        See details</a>
-                                </div>
-                            </div>
-
-                            <h2>LG Leon 2015</h2>
-
-                            <div class="product-carousel-price">
-                                <ins>$400.00</ins> <del>$425.00</del>
-                            </div>
-                        </div>
-                        <div class="single-product">
-                            <div class="product-f-image">
-                                <img src="img/product-4.jpg" alt="">
-                                <div class="product-hover">
-                                    <a href="#" class="add-to-cart-link"><i class="fa fa-shopping-cart"></i> Add to
-                                        cart</a>
-                                    <a href="/chitiet" class="view-details-link"><i class="fa fa-link"></i>
-                                        See details</a>
-                                </div>
-                            </div>
-
-                            <h2><a href="/chitiet">Sony microsoft</a></h2>
-
-                            <div class="product-carousel-price">
-                                <ins>$200.00</ins> <del>$225.00</del>
-                            </div>
-                        </div>
-                        <div class="single-product">
-                            <div class="product-f-image">
-                                <img src="img/product-5.jpg" alt="">
-                                <div class="product-hover">
-                                    <a href="#" class="add-to-cart-link"><i class="fa fa-shopping-cart"></i> Add to
-                                        cart</a>
-                                    <a href="/chitiet" class="view-details-link"><i class="fa fa-link"></i>
-                                        See details</a>
-                                </div>
-                            </div>
-
-                            <h2>iPhone 6</h2>
-                            <div class="product-carousel-price">
-                                <ins>$1200.00</ins> <del>$1355.00</del>
-                            </div>
-                        </div>
-                        <div class="single-product">
-                            <div class="product-f-image">
-                                <img src="img/product-6.jpg" alt="">
-                                <div class="product-hover">
-                                    <a href="#" class="add-to-cart-link"><i class="fa fa-shopping-cart"></i> Add to
-                                        cart</a>
-                                    <a href="/chitiet" class="view-details-link"><i class="fa fa-link"></i>
-                                        See details</a>
-                                </div>
-                            </div>
-
-                            <h2><a href="/chitiet">Samsung gallaxy note 4</a></h2>
-
-                            <div class="product-carousel-price">
-                                <ins>$400.00</ins>
-                            </div>
-                        </div>
+                        @endforeach
                     </div>
                 </div>
             </div>
@@ -1023,8 +679,7 @@ body {
                     <h2 class="product-wid-title">Top Sellers</h2>
                     <a href="" class="wid-view-more">View All</a>
                     <div class="single-wid-product">
-                        <a href="/chitiet"><img src="img/product-thumb-1.jpg" alt=""
-                                class="product-thumb"></a>
+                        <a href="/chitiet"><img src="img/product-thumb-1.jpg" alt="" class="product-thumb"></a>
                         <h2><a href="/chitiet">Sony Smart TV - 2015</a></h2>
                         <div class="product-wid-rating">
                             <i class="fa fa-star"></i>
@@ -1038,8 +693,7 @@ body {
                         </div>
                     </div>
                     <div class="single-wid-product">
-                        <a href="/chitiet"><img src="img/product-thumb-2.jpg" alt=""
-                                class="product-thumb"></a>
+                        <a href="/chitiet"><img src="img/product-thumb-2.jpg" alt="" class="product-thumb"></a>
                         <h2><a href="/chitiet">Apple new mac book 2015</a></h2>
                         <div class="product-wid-rating">
                             <i class="fa fa-star"></i>
@@ -1053,8 +707,7 @@ body {
                         </div>
                     </div>
                     <div class="single-wid-product">
-                        <a href="/chitiet"><img src="img/product-thumb-3.jpg" alt=""
-                                class="product-thumb"></a>
+                        <a href="/chitiet"><img src="img/product-thumb-3.jpg" alt="" class="product-thumb"></a>
                         <h2><a href="/chitiet">Apple new i phone 6</a></h2>
                         <div class="product-wid-rating">
                             <i class="fa fa-star"></i>
@@ -1074,8 +727,7 @@ body {
                     <h2 class="product-wid-title">Recently Viewed</h2>
                     <a href="#" class="wid-view-more">View All</a>
                     <div class="single-wid-product">
-                        <a href="/chitiet"><img src="img/product-thumb-4.jpg" alt=""
-                                class="product-thumb"></a>
+                        <a href="/chitiet"><img src="img/product-thumb-4.jpg" alt="" class="product-thumb"></a>
                         <h2><a href="/chitiet">Sony playstation microsoft</a></h2>
                         <div class="product-wid-rating">
                             <i class="fa fa-star"></i>
@@ -1089,8 +741,7 @@ body {
                         </div>
                     </div>
                     <div class="single-wid-product">
-                        <a href="/chitiet"><img src="img/product-thumb-1.jpg" alt=""
-                                class="product-thumb"></a>
+                        <a href="/chitiet"><img src="img/product-thumb-1.jpg" alt="" class="product-thumb"></a>
                         <h2><a href="/chitiet">Sony Smart Air Condtion</a></h2>
                         <div class="product-wid-rating">
                             <i class="fa fa-star"></i>
@@ -1104,8 +755,7 @@ body {
                         </div>
                     </div>
                     <div class="single-wid-product">
-                        <a href="/chitiet"><img src="img/product-thumb-2.jpg" alt=""
-                                class="product-thumb"></a>
+                        <a href="/chitiet"><img src="img/product-thumb-2.jpg" alt="" class="product-thumb"></a>
                         <h2><a href="/chitiet">Samsung gallaxy note 4</a></h2>
                         <div class="product-wid-rating">
                             <i class="fa fa-star"></i>
@@ -1125,8 +775,7 @@ body {
                     <h2 class="product-wid-title">Top New</h2>
                     <a href="#" class="wid-view-more">View All</a>
                     <div class="single-wid-product">
-                        <a href="/chitiet"><img src="img/product-thumb-3.jpg" alt=""
-                                class="product-thumb"></a>
+                        <a href="/chitiet"><img src="img/product-thumb-3.jpg" alt="" class="product-thumb"></a>
                         <h2><a href="/chitiet">Apple new i phone 6</a></h2>
                         <div class="product-wid-rating">
                             <i class="fa fa-star"></i>
@@ -1140,8 +789,7 @@ body {
                         </div>
                     </div>
                     <div class="single-wid-product">
-                        <a href="/chitiet"><img src="img/product-thumb-4.jpg" alt=""
-                                class="product-thumb"></a>
+                        <a href="/chitiet"><img src="img/product-thumb-4.jpg" alt="" class="product-thumb"></a>
                         <h2><a href="/chitiet">Samsung gallaxy note 4</a></h2>
                         <div class="product-wid-rating">
                             <i class="fa fa-star"></i>
@@ -1155,8 +803,7 @@ body {
                         </div>
                     </div>
                     <div class="single-wid-product">
-                        <a href="/chitiet"><img src="img/product-thumb-1.jpg" alt=""
-                                class="product-thumb"></a>
+                        <a href="/chitiet"><img src="img/product-thumb-1.jpg" alt="" class="product-thumb"></a>
                         <h2><a href="/chitiet">Sony playstation microsoft</a></h2>
                         <div class="product-wid-rating">
                             <i class="fa fa-star"></i>

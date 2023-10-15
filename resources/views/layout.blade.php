@@ -46,7 +46,7 @@
             <div class="row">
                 <div class="col-sm-3">
                     <div class="logo">
-                        <h1><a href="./"><img src="/img/logo.png"></a></h1>
+                        <h1><a href="/"><img src="/img/logo.png"></a></h1>
                     </div>
                 </div>
                 <div id="sm" class="col-sm-6">
