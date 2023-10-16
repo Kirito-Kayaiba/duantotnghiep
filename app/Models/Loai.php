@@ -8,6 +8,8 @@ use Illuminate\Database\Eloquent\Model;
 class Loai extends Model
 {
     protected $primaryKey = 'id_loai';
+    public $timestamps = false;
+
     protected $table = "Loai";
     public function sanpham()
     {
