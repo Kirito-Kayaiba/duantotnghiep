@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\SanphamController;
+use App\Http\Controllers\AuthController;
 
 /*
 |--------------------------------------------------------------------------
@@ -15,14 +16,12 @@ use App\Http\Controllers\SanphamController;
 */
 
 
-Route::get('/', [SanphamController::class, 'index']);
+Route::get('/', [SanphamController::class, 'index'])->name('home');
 
 Route::get('/layout',function(){
     return view('layout');
 });
-Route::get('/shop',function(){
-    return view('shop');
-});
+Route::get('/shop',[SanphamController::class, 'dt']);
 Route::get('/tintuc',function(){
     return view('tintuc');
 });
@@ -32,9 +31,11 @@ Route::get('/khuyenmai',function(){
 Route::get('/lienhe',function(){
     return view('lienhe');
 });
-Route::get('/dangnhap',function(){
-    return view('dangnhap');
-});
+Route::get('/dangnhap',[AuthController::class,'login'])->name('login');
+Route::post('/dangnhap',[AuthController::class,'loginPost'])->name('login.post');
+Route::get('/dangky',[AuthController::class,'register'])->name('register');
+Route::post('/dangky',[AuthController::class,'registerPost'])->name('register.post');
+Route::post('/logout',[AuthController::class,'logout'])->name('logout');
 Route::get('/chitiet',function(){
     return view('chitiet');
 });

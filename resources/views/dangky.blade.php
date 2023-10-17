@@ -85,7 +85,7 @@
                 class="img-fluid" alt="Phone image">
             </div>
             <div class="col-md-7 col-lg-5 col-xl-5 offset-xl-1">
-            <div class="mt-5">
+              <div class="mt-5">
                 @if($errors->any())
                 <div class="col-12">
                   @foreach($errors->all() as $error)
@@ -100,12 +100,21 @@
                 <div class="alert alert-danger">{{session('success')}}</div>
                 @endif
               </div>
-              <form action="{{route('login.post')}}" method="POST">
+              <form action="{{route('register.post')}}" method="POST">
                 @csrf
                 <div class="title-login">
-                <h2>Đăng Nhập</h2>
-                </div>
+                <h2>Đăng Ký</h2>
+                </div>  
                 <!-- Email input -->
+                <div class="form-outline mb-4">
+                  <input type="text" name="hoten" id="form1Example13" placeholder="Họ tên" class="form-control form-control-lg" />
+                </div>
+                <div class="form-outline mb-4">
+                  <input type="text" name="diachi" id="form1Example13" placeholder="Địa chỉ" class="form-control form-control-lg" />
+                </div>
+                <div class="form-outline mb-4">
+                  <input type="text" name="sdt" id="form1Example13" placeholder="Số điện thoại" class="form-control form-control-lg" />
+                </div>
                 <div class="form-outline mb-4">
                   <input type="email" name="email" id="form1Example13" placeholder="Email" class="form-control form-control-lg" />
                 </div>
@@ -125,7 +134,7 @@
                 </div>
       
                 <!-- Submit button -->
-                <button type="submit" class="btn btn-primary btn-lg btn-block">Sign in</button>
+                <button type="submit" class="btn btn-primary btn-lg btn-block">Đăng ký</button>
       
                 <div class="divider d-flex align-items-center my-4">
                   <p class="text-center fw-bold mx-3 mb-0 text-muted">OR</p>
