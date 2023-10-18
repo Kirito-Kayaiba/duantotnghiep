@@ -8,4 +8,5 @@ use Illuminate\Database\Eloquent\Model;
 class DoiTac extends Model
 {
     use HasFactory;
+    protected $table = "DoiTac";
 }
