@@ -12,17 +12,19 @@ class AuthController extends Controller
    public function login(){
     return view('dangnhap');
    }
-
    public function loginPost(Request $request){
     $request->validate([
         'email'=> 'required',
         'password'=> 'required'
     ]);
-    $email=$request->email;
-    $password=$request->password;
+
+    $email = $request->email;
+    $password = $request->password;
+
     if (Auth::attempt(['email' => $email, 'password' => $password])){
         return redirect()->intended(route('home'));
     }
+
     return redirect(route('login'))->with('error','Email hoặc password sai');  
 }
 

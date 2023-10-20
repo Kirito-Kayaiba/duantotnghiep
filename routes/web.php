@@ -10,7 +10,6 @@ use Illuminate\Support\Facades\Route;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 
-use App\Http\Controllers\SanphamController;
 use App\Http\Controllers\AuthController;
 
 
@@ -27,21 +26,12 @@ use App\Http\Controllers\AuthController;
 
 
 
- Route::get('admin-danhsachmuctin', [DanhMucTinTucController::class, 'danhSach']);
+ Route::get('admin-danhsachmuctin', [DanhMucTinTucController::class, 'danhSach'])->name('admin-danhsachmuctin');
  Route::get('/admin-suadanhmuctin/{id}', [DanhMucTinTucController::class, 'sua']);
  Route::post('/admin-suadanhmuctin/{id}', [DanhMucTinTucController::class, 'sua_']);
  Route::get('/admin-themdanhmuctin', [DanhMucTinTucController::class, 'them']);
  Route::post('/admin-themdanhmuctin', [DanhMucTinTucController::class, 'them_']);
  Route::get('/xoadm/{id}', [DanhMucTinTucController::class, 'xoa'])->name('xoatl');
-
-
- Route::get('admin-danhsachtintuc', [DanhSachTinTucController::class, 'danhSach']);
- Route::get('/admin-suadanhsachtin/{id}', [DanhSachTinTucController::class, 'sua']);
- Route::post('/admin-suadanhsachtin/{id}', [DanhSachTinTucController::class, 'sua_']);
- Route::get('/admin-themdanhsachtin', [DanhSachTinTucController::class, 'them']);
- Route::post('/admin-themdanhsachtin', [DanhSachTinTucController::class, 'them_']);
- Route::get('/xoatt/{id}',[DanhSachTinTucController::class, 'xoa'])->name('xoatt');
-
 
 
  Route::get('admin-danhsachloai', [LoaiController::class, 'danhSach']);
@@ -57,10 +47,11 @@ use App\Http\Controllers\AuthController;
  Route::get('/admin-themsanpham', [SanPhamController::class, 'them']);
  Route::post('/admin-themsanpham', [SanPhamController::class, 'them_']);
  Route::get('/xoasanpham/{id}',[SanPhamController::class, 'xoa'])->name('xoasanpham');
-=======
 
 
-Route::get('/', [SanphamController::class, 'index'])->name('home');
+    // Các routes yêu cầu xác thực
+    Route::get('/', [SanphamController::class, 'index'])->name('home');
+
 
 Route::get('/layout',function(){
     return view('layout');
@@ -89,58 +80,5 @@ Route::get('/giohang',function(){
 Route::get('/thanhtoan',function(){
     return view('thanhtoan');
 });
-// route admin
-Route::group(['prefix'=>'admin'],function(){
-    Route::get('custommer',function(){
-        return view('admin/custommer');
-    });  
-    Route::get('login',function(){
-        return view('admin/login');
-    });  
-    Route::get('forgot',function(){
-        return view('admin/forgot');
-    });  
-    Route::get('trangchu',function(){
-        return view('admin/home');
-    });  
-    Route::get('bangkeluong',function(){
-        return view('admin/bangkeluong');
-    });  
-    Route::get('bcdoanhthu',function(){
-        return view('admin/bcdoanhthu');
-    });  
-    Route::get('create-bangkeluong',function(){
-        return view('admin/create-bangkeluong');
-    });  
-    Route::get('create-qldonhang',function(){
-        return view('admin/create-qldonhang');
-    });  
-    Route::get('create-qlnhanvien',function(){
-        return view('admin/create-qlnhanvien');
-    });  
-    Route::get('create-qlnoibo',function(){
-        return view('admin/create-qlnoibo');
-    });  
-    Route::get('create-qlsanpham',function(){
-        return view('admin/create-qlsanpham');
-    });  
-    Route::get('lichcongtac',function(){
-        return view('admin/lichcongtac');
-    });  
-    Route::get('qldonhang',function(){
-        return view('admin/qldonhang');
-    });  
-    Route::get('qlnhanvien',function(){
-        return view('admin/qlnhanvien');
-    });  
-    Route::get('qlnoibo',function(){
-        return view('admin/qlnoibo');
-    });  
-    Route::get('qlsanpham',function(){
-        return view('admin/qlsanpham');
-    });  
-    Route::get('posbanhang',function(){
-        return view('admin/posbanhang');
-    });  
-});
+
 
