@@ -5,11 +5,8 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Http\Models\User;
 use Illuminate\Support\Facades\Auth;
-use Illuminate\Support\Facades\Session;
+
 use Illuminate\Support\Facades\Hash;
-use Illuminate\Support\Facades\Mail;
-use Illuminate\Support\Str;
-use Carbon\Carbon;
 
 
 class AuthController extends Controller
@@ -30,7 +27,7 @@ class AuthController extends Controller
         session(['password' => $password]);
         return redirect()->intended(route('home'));
     }
-    else{return redirect(route('login'))->with('error','Email hoặc password sai');}  
+    return redirect(route('login'))->with('error','Email hoặc password sai');
 }
 
 public function register(){
