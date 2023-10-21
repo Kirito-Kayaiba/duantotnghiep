@@ -413,7 +413,7 @@ body {
     <div class="block-slider block-slider4">
         <ul class="" id="bxslider-home4">
             <li>
-                <img src="img/h4-slide.png" alt="Slide">
+                <img src="{{ asset('img/h4-slide2.png') }}" alt="Slide">
                 <div class="caption-group">
                     <h2 class="caption title">
                         iPhone <span class="primary">6 <strong>Plus</strong></span>
@@ -422,7 +422,7 @@ body {
                     <a class="caption button-radius" href="#"><span class="icon"></span>Shop now</a>
                 </div>
             </li>
-            <li><img src="img/h4-slide2.png" alt="Slide">
+            <li><img src="{{ asset('img/h4-slide3.png') }}" alt="Slide">
                 <div class="caption-group">
                     <h2 class="caption title">
                         by one, get one <span class="primary">50% <strong>off</strong></span>
@@ -431,7 +431,7 @@ body {
                     <a class="caption button-radius" href="#"><span class="icon"></span>Shop now</a>
                 </div>
             </li>
-            <li><img src="img/h4-slide3.png" alt="Slide">
+            <li><img src="{{ asset('img/h4-slide4.png') }}" alt="Slide">
                 <div class="caption-group">
                     <h2 class="caption title">
                         Apple <span class="primary">Store <strong>Ipod</strong></span>
@@ -440,7 +440,7 @@ body {
                     <a class="caption button-radius" href="#"><span class="icon"></span>Shop now</a>
                 </div>
             </li>
-            <li><img src="img/h4-slide4.png" alt="Slide">
+            <li><img src="{{ asset('img/h4-slide7.png') }}" alt="Slide">
                 <div class="caption-group">
                     <h2 class="caption title">
                         Apple <span class="primary">Store <strong>Ipod</strong></span>
@@ -506,12 +506,12 @@ body {
                                 <div class="product-hover">
                                     <a href="#" class="add-to-cart-link"><i class="fa fa-shopping-cart"></i> Add to
                                         cart</a>
-                                    <a href="/chitiet" class="view-details-link"><i class="fa fa-link"></i>
+                                    <a href="{{ url('/chitietsp',[$s->id_san_pham]) }}" class="view-details-link"><i class="fa fa-link"></i>
                                         See details</a>
                                 </div>
                             </div>
 
-                            <h2><a href="/chitiet">{{$s->ten_san_pham}}</a></h2>
+                            <h2><a href="">{{$s->ten_san_pham}}</a></h2>
 
                             <div class="product-carousel-price">
                                 <ins>{{$s->gia}}</ins> <del>{{$s->gia_khuyen_mai}}</del>

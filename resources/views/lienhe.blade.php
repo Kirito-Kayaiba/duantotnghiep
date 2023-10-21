@@ -2,7 +2,7 @@
 @section('noidung')
    <!--css liên hệ  -->
 <style>
-    
+
 
     .mainmenu-area {
         background: none repeat scroll 0 0 #333;
@@ -19,11 +19,11 @@
     .product-big-title-area {
         background: url(img/crossword.png) repeat scroll 0 0 #f17024;
     }
-    
+
     .logo h1 a img{
         width: 30%;
     }
-    
+
     .header-area{
         background-color: #f17024;
     }
@@ -66,7 +66,7 @@
         position: relative;
         margin-right: 20px;
     }
-    
+
     .contact-form input[type="submit"]{
         margin-right: 15px;
     }
@@ -82,12 +82,12 @@
         font-size: 1em;
         text-shadow: 0 1px 1px rgba(255, 255, 255, 0.5);
     }
-    
+
     </style>
 
     <div class="main">
         <div class="container">
-            
+
              <div class="content">
             <div class="support">
                 <div class="title-block-common mb-2">
@@ -161,7 +161,7 @@
             </div>
         </div>
         </div>
-       
+
     </div>
 
     <div class="brands-area">
@@ -346,6 +346,9 @@
             </div>
         </div>
     </div> <!-- End product widget area -->
-   
-   
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+
 @endsection

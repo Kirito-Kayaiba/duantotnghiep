@@ -16,21 +16,21 @@
             class="app-menu__label">Quản lý nhân viên</span></a></li>
       <li><a class="app-menu__item" href="#"><i class='app-menu__icon bx bx-user-voice'></i><span
             class="app-menu__label">Quản lý khách hàng</span></a></li>
-      <li><a class="app-menu__item" href="/admin-danhsachsanpham"><i
+      <li><a class="app-menu__item" href="table-data-product.html"><i
             class='app-menu__icon bx bx-purchase-tag-alt'></i><span class="app-menu__label">Quản lý sản phẩm</span></a>
       </li>
-      <li><a class="app-menu__item" href="/admin-danhsachsanpham"><i class='app-menu__icon bx bx-task'></i><span
-            class="app-menu__label">Danh Sách Sản Phẩm</span></a></li>
-      <li><a class="app-menu__item" href=""><i class='app-menu__icon bx bx-run'></i><span
+      <li><a class="app-menu__item" href="table-data-oder.html"><i class='app-menu__icon bx bx-task'></i><span
+            class="app-menu__label">Quản lý đơn hàng</span></a></li>
+      <li><a class="app-menu__item" href="table-data-banned.html"><i class='app-menu__icon bx bx-run'></i><span
             class="app-menu__label">Quản lý nội bộ
           </span></a></li>
       <li><a class="app-menu__item" href="table-data-money.html"><i class='app-menu__icon bx bx-dollar'></i><span
             class="app-menu__label">Bảng kê lương</span></a></li>
-      <li><a class="app-menu__item" href="/admin-danhsachmuctin"><i
-            class='app-menu__icon bx bx-pie-chart-alt-2'></i><span class="app-menu__label">Danh mục tin</span></a>
+      <li><a class="app-menu__item" href="quan-ly-bao-cao.html"><i
+            class='app-menu__icon bx bx-pie-chart-alt-2'></i><span class="app-menu__label">Báo cáo doanh thu</span></a>
       </li>
-      <li><a class="app-menu__item" href="/admin-danhsachloai"><i class='app-menu__icon bx bx-calendar-check'></i><span
-            class="app-menu__label">Danh Sách Loại</span></a></li>
+      <li><a class="app-menu__item" href="page-calendar.html"><i class='app-menu__icon bx bx-calendar-check'></i><span
+            class="app-menu__label">Lịch công tác </span></a></li>
       <li><a class="app-menu__item" href="#"><i class='app-menu__icon bx bx-cog'></i><span class="app-menu__label">Cài
             đặt hệ thống</span></a></li>
     </ul>

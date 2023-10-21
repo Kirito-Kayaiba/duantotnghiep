@@ -91,7 +91,7 @@ div.quantity input.plus, div.quantity input.minus {
                             <input type="submit" value="Search">
                         </form>
                     </div>
-                    
+
                     <div class="single-sidebar">
                         <h2 class="sidebar-title">Products</h2>
                         <div class="thubmnail-recent">
@@ -99,31 +99,31 @@ div.quantity input.plus, div.quantity input.minus {
                             <h2><a href="/chitiet">Sony Smart TV - 2015</a></h2>
                             <div class="product-sidebar-price">
                                 <ins>$700.00</ins> <del>$800.00</del>
-                            </div>                             
+                            </div>
                         </div>
                         <div class="thubmnail-recent">
                             <img src="img/product-thumb-1.jpg" class="recent-thumb" alt="">
                             <h2><a href="/chitiet">Sony Smart TV - 2015</a></h2>
                             <div class="product-sidebar-price">
                                 <ins>$700.00</ins> <del>$800.00</del>
-                            </div>                             
+                            </div>
                         </div>
                         <div class="thubmnail-recent">
                             <img src="img/product-thumb-1.jpg" class="recent-thumb" alt="">
                             <h2><a href="/chitiet">Sony Smart TV - 2015</a></h2>
                             <div class="product-sidebar-price">
                                 <ins>$700.00</ins> <del>$800.00</del>
-                            </div>                             
+                            </div>
                         </div>
                         <div class="thubmnail-recent">
                             <img src="img/product-thumb-1.jpg" class="recent-thumb" alt="">
                             <h2><a href="/chitiet">Sony Smart TV - 2015</a></h2>
                             <div class="product-sidebar-price">
                                 <ins>$700.00</ins> <del>$800.00</del>
-                            </div>                             
+                            </div>
                         </div>
                     </div>
-                    
+
                     <div class="single-sidebar">
                         <h2 class="sidebar-title">Recent Posts</h2>
                         <ul>
@@ -135,7 +135,7 @@ div.quantity input.plus, div.quantity input.minus {
                         </ul>
                     </div>
                 </div>
-                
+
                 <div class="col-md-8">
                     <div class="product-content-right">
                         <div class="woocommerce">
@@ -154,19 +154,19 @@ div.quantity input.plus, div.quantity input.minus {
                                     <tbody>
                                         <tr class="cart_item">
                                             <td class="product-remove">
-                                                <a title="Remove this item" class="remove" href="#">×</a> 
+                                                <a title="Remove this item" class="remove" href="#">×</a>
                                             </td>
 
-                                            <td class="product-thumbnail">
+                                            <!-- <td class="product-thumbnail">
                                                 <a href="/chitiet"><img width="145" height="145" alt="poster_1_up" class="shop_thumbnail" src="img/product-thumb-2.jpg"></a>
-                                            </td>
+                                            </td> -->
 
                                             <td class="product-name">
-                                                <a href="/chitiet">Ship Your Idea</a> 
+                                                <a href="/chitiet">Ship Your Idea</a>
                                             </td>
 
                                             <td class="product-price">
-                                                <span class="amount">£15.00</span> 
+                                                <span class="amount">£15.00</span>
                                             </td>
 
                                             <td class="product-quantity">
@@ -178,7 +178,7 @@ div.quantity input.plus, div.quantity input.minus {
                                             </td>
 
                                             <td class="product-subtotal">
-                                                <span class="amount">£15.00</span> 
+                                                <span class="amount">£15.00</span>
                                             </td>
                                         </tr>
                                         <tr>
@@ -204,7 +204,7 @@ div.quantity input.plus, div.quantity input.minus {
                                 <ul class="products">
                                     <li class="product">
                                         <a href="/chitiet">
-                                            <img width="325" height="325" alt="T_4_front" class="attachment-shop_catalog wp-post-image" src="img/product-2.jpg">
+                                            <img width="325" height="325" alt="T_4_front" class="attachment-shop_catalog wp-post-image" src="">
                                             <h3>Ship Your Idea</h3>
                                             <span class="price"><span class="amount">£20.00</span></span>
                                         </a>
@@ -214,7 +214,7 @@ div.quantity input.plus, div.quantity input.minus {
 
                                     <li class="product">
                                         <a href="/chitiet">
-                                            <img width="325" height="325" alt="T_4_front" class="attachment-shop_catalog wp-post-image" src="img/product-4.jpg">
+                                            <img width="325" height="325" alt="T_4_front" class="attachment-shop_catalog wp-post-image" src="">
                                             <h3>Ship Your Idea</h3>
                                             <span class="price"><span class="amount">£20.00</span></span>
                                         </a>
@@ -516,13 +516,13 @@ div.quantity input.plus, div.quantity input.minus {
 
 
                             </div>
-                        </div>                        
-                    </div>                    
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
 
 
- 
+
 @endsection
