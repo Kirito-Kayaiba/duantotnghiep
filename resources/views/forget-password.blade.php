@@ -10,8 +10,8 @@
     <link rel="stylesheet" type="text/css" href="vendor/animate/animate.css">
     <link rel="stylesheet" type="text/css" href="vendor/css-hamburgers/hamburgers.min.css">
     <link rel="stylesheet" type="text/css" href="vendor/select2/select2.min.css">
-    <link rel="stylesheet" type="text/css" href="css/util.css">
-    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" type="text/css" href="admin/css/util.css">
+    <link rel="stylesheet" type="text/css" href="admin/css/main.css">
     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-sweetalert/1.0.1/sweetalert.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js"></script>
@@ -26,16 +26,32 @@
         <div class="container-login100">
             <div class="wrap-login100">
                 <div class="login100-pic js-tilt" data-tilt>
-                    <img src="images/fg-img.png" alt="IMG">
+                    <img src="admin/images/fg-img.png" alt="IMG">
               </div>
                 <form class="login100-form validate-form">
                     <span class="login100-form-title">
                         <b>KHÔI PHỤC MẬT KHẨU</b>
                     </span>
-                    <form action="custommer.html">
+                    <div class="mt-5">
+                    @if($errors->any())
+                    <div class="col-12">
+                        @foreach($errors->all() as $error)
+                        <div class="alert alert-danger">{{$error}}</div>
+                        @endforeach
+                    </div>
+                    @endif
+                    @if(session()->has('error'))
+                    <div class="alert alert-danger">{{session('error')}}</div>
+                    @endif
+                    @if(session()->has('success'))
+                    <div class="alert alert-danger">{{session('success')}}</div>
+                    @endif
+                </div>
+                    <form action="{{route('forget.password.post')}}" method="POST">
+                        @csrf
                         <div class="wrap-input100 validate-input"
                             data-validate="Bạn cần nhập đúng thông tin như: ex@abc.xyz">
-                            <input class="input100" type="text" placeholder="Nhập email" name="emailInput"
+                            <input class="input100" type="text" placeholder="Nhập email" name="email"
                                 id="emailInput" value="" />
                             <span class="focus-input100"></span>
                             <span class="symbol-input100">
@@ -43,11 +59,11 @@
                             </span>
                         </div>
                         <div class="container-login100-form-btn">
-                            <input type="button" onclick="return RegexEmail('emailInput')" value="Lấy mật khẩu" />
+                            <input type="submit"  value="Lấy mật khẩu" />
                         </div>
 
                         <div class="text-center p-t-12">
-                            <a class="txt2" href="/index.html">
+                            <a class="txt2" href="/">
                                 Trở về đăng nhập
                             </a>
                         </div>

@@ -434,7 +434,7 @@ z-index: 999;}
     display: block;
     font-size: 16px;
     left: 10%;
-    margin: -10px 0;
+    margin: -20px 0;
     padding: 10px;
     position: absolute;
     text-align: center;
@@ -1104,8 +1104,15 @@ div.cart-collaterals ul.products li.product:hover .add_to_cart_button{background
 
 
 .single-shop-product h2 {
-    font-size: 20px;
-    margin: 10px 0;
+    font-size:18px;
+    margin: 10px 0 20px 0;
+}
+.product-upper{
+
+}
+.product-bottom{
+	position:absolute;
+    top:240px;
 }
 .product-option-shop {
     margin-top: 15px;
@@ -1167,6 +1174,10 @@ width: 80%;
 } 
 #right{
 color:white;
+}
+
+.h-380{
+   height : 380px;
 }
 
 

@@ -14,7 +14,7 @@ class SanphamController extends Controller
         return view('home',['sp'=>$sp,'sp2'=>$sp2,'sp3'=>$sp3,'sp4'=>$sp4]);
     }
     public function dt(){
-        $dt= \DB::table('sanpham')->where('id_loai','1')->get();
+        $dt= \DB::table('sanpham')->get();
         return view('shop',['dt'=>$dt]);
     }
 }

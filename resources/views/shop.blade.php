@@ -158,14 +158,14 @@ body {
             <div class="col-md-8" id="col-md-8">
 
                 @foreach($dt as $d)
-                <div class="col-md-4 col-sm-6">
+                <div class="col-md-4 col-sm-6 h-380">
                     <div class="single-shop-product">
                         <div class="product-upper">
                             <img src="img/{{$d->hinh}}" alt="">
                         </div>
-
+                               
                         <h2><a href="/chitiet">{{$d->ten_san_pham}}</a></h2>
-
+<div class="product-bottom">
                         <div class="product-carousel-price">
                             <ins>{{$d->gia}}</ins> <del>{{$d->gia_khuyen_mai}}</del>
                         </div>
@@ -173,7 +173,7 @@ body {
                             <a class="add_to_cart_button" data-quantity="1" data-product_sku="" data-product_id="70"
                                 rel="nofollow" href="/canvas/shop/?add-to-cart=70">Add to cart</a>
                         </div>
-                    </div>
+                    </div></div> 
                 </div>
                 @endforeach
 
