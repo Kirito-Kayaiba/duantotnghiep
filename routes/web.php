@@ -4,8 +4,10 @@ use App\Http\Controllers\DanhMucTinTucController;
 use App\Http\Controllers\DanhSachTinTucController;
 use App\Http\Controllers\LoaiController;
 use App\Http\Controllers\SanPhamController;
-
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\ForgotPasswordController;
+use App\Http\Controllers\ResetPasswordController;
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
@@ -70,7 +72,11 @@ Route::get('/dangnhap',[AuthController::class,'login'])->name('login');
 Route::post('/dangnhap',[AuthController::class,'loginPost'])->name('login.post');
 Route::get('/dangky',[AuthController::class,'register'])->name('register');
 Route::post('/dangky',[AuthController::class,'registerPost'])->name('register.post');
-Route::post('/logout',[AuthController::class,'logout'])->name('logout');
+Route::get('/forgot-password', [ForgotPasswordController::class, 'showLinkRequestForm'])->name('password.request');
+Route::post('/forgot-password', [ForgotPasswordController::class, 'sendResetLinkEmail'])->name('password.email');
+Route::get('/reset-password/{token}', [ResetPasswordController::class, 'showResetForm'])->name('password.reset');
+Route::post('/reset-password', [ResetPasswordController::class, 'reset'])->name('password.update');
+Route::get('/logout',[AuthController::class,'logout'])->name('logout');
 Route::get('/chitiet',function(){
     return view('chitiet');
 });
@@ -82,3 +88,7 @@ Route::get('/thanhtoan',function(){
 });
 
 
+
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');

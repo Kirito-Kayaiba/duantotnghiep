@@ -89,7 +89,15 @@
                     </ul>
                 
                     <ul id="right" class="nav navbar-nav navbar-right">
-                        <li><a href="/dangnhap"><i class="fa-regular fa-user"></i> Tài khoản</a></li>
+                       <!-- Trong Blade View -->
+                    @if(session('userInfo'))
+                    <li><a href="logout"><i class="fa-regular fa-user"></i> {{ session('userInfo')['ten'] }}
+                </a></li>
+                    @else
+                    <li><a href="/dangnhap"><i class="fa-regular fa-user"></i> Tài khoản</a></li>
+                    @endif
+
+
                     </ul>
                 </div> 
             </div>
