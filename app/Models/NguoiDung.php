@@ -17,4 +17,10 @@ class NguoiDung extends Model
     public function tintuc(){
         return $this->hasMany('App\Models\TinTuc','id_nguoi_dung','id_nguoi_dung');
     }
+
+
+    public function binhLuans()
+{
+    return $this->hasMany(BinhLuan::class, 'id_nguoi_dung'); // 'id_nguoi_dung' là khóa ngoại trong bảng BinhLuan
+}
 }
